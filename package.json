@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ParsePlatform/parse-server"
+    "url": "https://github.com/noboddee/parse-server"
   },
   "files": [
     "bin/",
@@ -73,8 +73,7 @@
     "test:win": "npm run pretest && cross-env NODE_ENV=test TESTING=1 node ./node_modules/jasmine/bin/jasmine.js && npm run posttest",
     "coverage": "cross-env COVERAGE_OPTION='./node_modules/.bin/istanbul cover' npm test",
     "coverage:win": "npm run pretest && cross-env NODE_ENV=test TESTING=1 node ./node_modules/babel-istanbul/lib/cli.js cover ./node_modules/jasmine/bin/jasmine.js && npm run posttest",
-    "start": "node ./bin/parse-server",
-    "prepublish": "npm run build"
+    "start": "node ./bin/parse-server"
   },
   "engines": {
     "node": ">=4.5"
